@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<head>    
+<body>
+
+            <style>
+
+        body{background-image: url(polka\ dot.jpg);backdrop-filter: blur(5p);
+        background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
+
+
+        button{
+            background-color:#eaa0a2;
+            font-family: Phaeton;
+            border-color: white;
+            
+
+        }
+
+        .sidebar{
+            background:#3a4664;
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100vh;
+            width: 250px;
+            padding: 20px;
+            z-index: 1000;
+            overflow-y: auto;
+            position: fixed;
+
+        }
+
+        .logo{
+            margin-right: 2px;
+            width: 50px;
+            height: 75px;
+
+
+
+        }
+
+        
+
+        .createacc{
+            background: #eaa0a2;
+            border-color:#ffffff;
+            font-family: Phaeton;
+
+        }
+
+        .main{
+            background-color: #eaa0a2;
+
+
+        }
+
+        #page-content-wrapper {
+    margin-left: 250px; /* This pushes the content to the right of the sidebar */
+    width: calc(100% - 250px); /* This ensures the dashboard doesn't overflow the screen */
+}
+        
+
+        </style>
+
+    <!-- SIDEBAR -->
+        <nav class="sidebar d-flex flex-column">
+
+            <div class="container-fluid">
+                <center><a class="logo" href="#"> <img src="logo.png" alt="logo" height="100px"> </a><br></center>
+
+            <ul class="nav flex-column mt-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Dashboard </a>
+                             <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Virtual Notebooks </a>
+                            <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Tasks </a> 
+                            <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Profile </a>   
+                            <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Logout </a> 
+                        </li>  
+                    </nav>
+
+    <style>
+
+body {
+    background-color: #e9ecef;
+    overflow-x: hidden;
+    font-family: Phaeton;
+}
+
+.curriculum-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.h1 {
+    background-color: #eaa0a2;
+}
+
+.h2 {
+    color: #eaa0a2;
+}
+
+.highlight {
+    background-color: #ffdbdc;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.quarter-list ul {
+    list-style-type: circle;
+    font-size: 0.95rem;
+    color: #4a5568;
+}
+
+.quarter-head {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 240px);
+    color: #aaaaaa;
+}
+
+    </style>
+
+<div id="page-content-wrapper">
+    <div class="container-fluid p-4">
+
+        <div class="d-flex align-items-center mb-3">
+            <h1 class="h1 badge fs-4 p-3 rounded-3 mb-0">Dashboard</h1>
+        </div>
+
+        <p class="text-secondary small ms-1">Quarter Work Plan</p>
+
+        <div class="curriculum-container bg-white shadow-sm p-5 mt-4">
+            <h2 class="h2 fw-bold">Information and Communications Technology</h2>
+            <p class="text-decoration-underline mb-4">The Curriculum</p>
+
+            <div class="quarter-list">
+
+                <div class="mb-4">
+                    <h5 class="quarter-head">
+                        <span class="highlight">I. 1st Quarter</span>
+                    </h5>
+                    <ul>
+                        <li>Introduction to HTML</li>
+                        <li>Basic CSS Styling</li>
+                        <li>Quarter Project</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h5 class="quarter-head">
+                        <span class="highlight">II. 2nd Quarter</span>
+                    </h5>
+                    <ul>
+                        <li>Introduction to Bootstrap</li>
+                        <li>Bootstrap with Forms</li>
+                        <li>Quarter Project</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h5 class="quarter-head">
+                        <span class="highlight">III. 3rd Quarter</span>
+                    </h5>
+                    <ul>
+                        <li>Introduction to JavaScript</li>
+                        <li>JavaScript data types, operators and variables</li>
+                        <li>JavaScript functions and events</li>
+                        <li>Quarter Project</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h5 class="quarter-head">
+                        <span class="highlight">IV. 4th Quarter</span>
+                    </h5>
+                    <ul>
+                        <li>Conditional Statements</li>
+                        <li>Iteration Statements</li>
+                        <li>Quarter Project</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer-full-width py-2 bg-secondary text-white text-end px-4">
+        <small>Jadenne Saquido | Group No. 3 | 9 Ruby © 2026</small>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+</body>
+</html>
