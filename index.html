@@ -1,96 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page Ი𐑼</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #3f4a6b, #d88c8c, #e7c5c5, #f2f2f2, #9e9e9e);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.login-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.login-container img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #3f4a6b;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    background: #e7c5c5;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    background: #3f4a6b;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #d88c8c;
+}
+
+.options {
+    margin-top: 10px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.forgot {
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #3f4a6b;
+    text-decoration: none;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 13px;
+    color: red;
+}
+</style>
 </head>
 <body>
 
-  <!-- NAVBAR STYLE -->
-        <style>
+<div class="login-container">
+    <img src="logo.png" alt="Logo">
+    <h2>Login</h2>
 
-        body{background-image: url(polka\ dot.jpg);backdrop-filter: blur(5p);
-        background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
+    <input type="text" id="username" class="input-field" placeholder="Username">
+    <input type="password" id="password" class="input-field" placeholder="Password">
 
+    <div class="options">
+        <label><input type="checkbox" id="remember"> Stay logged in</label>
+    </div>
 
-        button{
-            background-color:#eaa0a2;
-            font-family: cursive;
-            border-color: white;
-            
+    <button class="login-btn" onclick="login()">Login</button>
+    <a href="#" class="forgot" onclick="forgot()">Forgot username / password?</a>
 
+    <div id="msg" class="message"></div>
+</div>
+
+<script>
+const correctUser = "admin";
+const correctPass = "1234";
+
+window.onload = () => {
+    const savedUser = localStorage.getItem("user");
+    if (savedUser) {
+        document.getElementById("username").value = savedUser;
+        document.getElementById("remember").checked = true;
+    }
+};
+
+function login() {
+    const user = document.getElementById("username").value.trim();
+    const pass = document.getElementById("password").value.trim();
+    const remember = document.getElementById("remember").checked;
+    const msg = document.getElementById("msg");
+
+    msg.style.color = "red";
+
+    if (!user || !pass) {
+        msg.textContent = "Please fill in all fields.";
+        return;
+    }
+
+    if (user === correctUser && pass === correctPass) {
+        msg.style.color = "green";
+        msg.textContent = "Login successful! Redirecting...";
+
+        if (remember) {
+            localStorage.setItem("user", user);
+        } else {
+            localStorage.removeItem("user");
         }
 
-        .sidebar{
-            background:#3a4664;
-            position: fixed;
-            left: 0;
-            top: 0;
-            flex-direction: column;
-            align-items: flex-start;
-            height: 100vh;
-            width: 250px;
-            padding: 20px;
+        setTimeout(() => {
+            alert("Logged in!");
+        }, 800);
 
-        }
+    } else {
+        msg.textContent = "Invalid username or password.";
+    }
+}
 
-        .logo{
-            margin-right: 2px;
-            width: 50px;
-            height: 75px;
-
-
-
-        }
-
-        
-
-        .createacc{
-            background: #eaa0a2;
-            border-color:#ffffff;
-            font-family: cursive;
-
-        }
-
-        .main{
-            background-color: #eaa0a2;
-
-
-        }
-        
-
-        </style>
-
-    <!-- SIDEBAR -->
-        <nav class="sidebar d-flex flex-column">
-
-            <div class="container-fluid">
-                <center><a class="logo" href="#"> <img src="logo.png" alt="logo" height="100px"> </a><br></center>
-
-            <ul class="nav flex-column mt-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="dashboard.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Dashboard </a>
-                             <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Virtual Notebooks </a>
-                            <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Tasks </a> 
-                            <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Profile </a>   
-                            <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Logout </a> 
-                        </li>  
-                    </nav>
-
-     <!-- MAIN CONTAINER -->
-
-     <div class="main container-fluid"> 
-
-        <p>hi</p>
-
-
-     </div>
-                
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+function forgot() {
+    alert("Demo login:\nUsername: admin\nPassword: 1234");
+}
+</script>
 
 </body>
 </html>
