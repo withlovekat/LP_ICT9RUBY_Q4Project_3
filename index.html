@@ -1,9 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Login</title>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Ი𐑼</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- NAVBAR STYLE -->
+        <style>
+
+        body{background-image: url(polka\ dot.jpg);backdrop-filter: blur(5p);
+        background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
+
+
+        button{
+            background-color:#eaa0a2;
+            font-family: cursive;
+            border-color: white;
+            
+
+        }
+
+        .sidebar{
+            background:#3a4664;
+            position: fixed;
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100vh;
+            width: 250px;
+            padding: 20px;
+
+        }
+
+        .logo{
+            margin-right: 2px;
+            width: 50px;
+            height: 75px;
+
+
+
+        }
+
+        
+
+        .createacc{
+            background: #eaa0a2;
+            border-color:#ffffff;
+            font-family: cursive;
+
+        }
+
+        .main{
+            background-color: #eaa0a2;
+
+
+        }
+        
+
+        </style>
+
+    <!-- SIDEBAR -->
+        <nav class="sidebar d-flex flex-column">
+
+            <div class="container-fluid">
+                <center><a class="logo" href="#"> <img src="logo.png" alt="logo" height="100px"> </a><br></center>
+
+            <ul class="nav flex-column mt-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Dashboard </a>
+                             <a class="nav-link" href="notebooks.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Virtual Notebooks </a>
+                            <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Tasks </a> 
+                            <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Profile </a>   
+                            <a class="nav-link" href="index.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Logout </a> 
+                        </li>  
+                    </nav>
+
+    <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -146,6 +223,11 @@ function forgot() {
     alert("Demo login:\nUsername: admin\nPassword: 1234");
 }
 </script>
+        
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    
 </body>
 </html>
