@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebooks ♡</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- NAVBAR STYLE -->
+        <style>
+
+        body{background-image: url(polka\ dot.jpg);backdrop-filter: blur(5p);
+        background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
+
+
+        button{
+            background-color:#eaa0a2;
+            font-family: phaeton;
+            border-color: white;
+            
+
+        }
+
+        .sidebar{
+            background:#3a4664;
+            position: fixed;
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100vh;
+            width: 250px;
+            padding: 20px;
+
+        }
+
+        .logo{
+            margin-right: 2px;
+            width: 50px;
+            height: 75px;
+
+
+
+        }
+
+        
+
+        .createacc{
+            background: #eaa0a2;
+            border-color:#ffffff;
+            font-family: cursive;
+
+        }
+
+        .main{
+            background-color: #eaa0a2;
+
+
+        }
+        
+
+        </style>
+
+    <!-- SIDEBAR -->
+        <nav class="sidebar d-flex flex-column">
+
+            <div class="container-fluid">
+                <center><a class="logo" href="#"> <img src="logo.png" alt="logo" height="100px"> </a><br></center>
+
+            <ul class="nav flex-column mt-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Dashboard </a>
+                             <a class="nav-link" href="notebooks.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Virtual Notebooks </a>
+                            <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Tasks </a> 
+                            <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Profile </a>   
+                            <a class="nav-link" href="index.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Logout </a> 
+                        </li>  
+                    </nav>
+
+    
+        <style>
+
+        .notebooks{
+            background-color: #ffdbdc;
+            margin-top: 20px;
+            border-radius: 20px;
+            padding: 20px;
+            max-width: 210px;
+            size: 20px;
+            box-shadow: 0px 0px 12px rgba(170, 170, 170, 1);
+            height: auto;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            min-height: 400px;
+            text-align: left;
+
+        } 
+
+        .classname{
+            color: #ffffff;
+            font-family: phaeton;
+            width: 50%;
+            margin-bottom: 18px;
+            height: 60px;
+            margin-bottom: 10px;
+
+        }
+
+        .class{
+            background-color: 	#eaa0a2;
+            border-radius: 20px;
+            padding: 10px;
+            max-width: 195px;
+            size: 20px;
+            align-items: center;    
+            margin-top: auto;
+
+        }
+
+        .picture{
+            border-radius: 20px ;
+            width: 100%;
+            margin-top: -7px;
+            box-shadow: 0px 0px 8px rgba(234, 160, 162, 1);
+
+
+        }
+
+        .section{
+            font-family: phaeton;
+            color: #ffffff;
+            font-size: 16px;
+            margin-top: -9px;
+            font-weight: bold;
+            text-shadow: 0px 0px 12px rgba(234, 160, 162, 1);
+            margin-top: 12px;
+
+        }
+
+        .teacher{
+            font-family: phaeton;
+            color: #ffffff;
+            font-size: 16px;
+            margin-top: 15px;
+            font-weight: bold;
+            text-shadow: 0px 0px 12px rgba(234, 160, 162, 1);
+            margin-bottom: px;
+
+
+        }
+
+        .notebook-holder{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 35px;
+            padding: 20px;
+            margin-left: 270px;
+
+        }
+
+         </style>
+
+         <style>
+
+            .notebook-title{
+                background-color: #eaa0a2;
+                padding: 10px 30px;
+                border-radius: 20px;
+                width: auto;
+                margin-right: 0px;
+                margin-left: 275px;
+                margin-top: 20px;
+                align-items: center;
+                display: inline-flex;
+                justify-content: center;
+                height: auto;
+                box-shadow: 0px 0px 8px rgba(255, 219, 220, 1);
+
+            }
+
+            .notebook-text{
+                font-family: phaeton;
+                margin: 0;
+                color: white;
+
+            }
+
+            
+        
+
+
+
+         </style>
+
+        
+
+         <div class="notebook-title container-fluid">
+
+            <h1 class="notebook-text">Notebooks</h1><br>
+
+
+         </div>
+
+         
+
+        <div class="notebook-holder">
+
+        <div class="notebooks"> 
+
+            <h1 class="classname">S.S.</h1>
+            <div class="picture"> <img src="unicorn.jpg" class="picture""> </div>
+
+            <p class="section">9-Pink Quartz 2025-2026</p>
+            <p class="teacher">Ms. Kate</p>
+            
+            <div class="class container-fluid"></div>
+
+        </div>
+
+        <div class="notebooks"> 
+
+            <h1 class="classname">Math</h1>
+            <div class="picture"> <img src="unicorn.jpg" class="picture""> </div>
+
+            <p class="section">9-Pink Quartz 2025-2026</p>
+            <p class="teacher">Mr. Antonio</p>
+            
+            <div class="class container-fluid"></div>
+
+        </div>
+
+        <div class="notebooks"> 
+
+            <h1 class="classname">Science</h1>
+            <div class="picture"> <img src="unicorn.jpg" class="picture""> </div>
+
+            <p class="section">9-Pink Quartz 2025-2026</p>
+            <p class="teacher">Ms. Luna</p>
+            
+            <div class="class container-fluid"></div>
+
+        </div>
+
+        <div class="notebooks"> 
+
+            <h1 class="classname">Music</h1>
+            <div class="picture"> <img src="unicorn.jpg" class="picture""> </div>
+
+            <p class="section">9-Pink Quartz 2025-2026</p>
+            <p class="teacher">Mr. Asher</p>
+            
+            <div class="class container-fluid"></div>
+
+        </div>
+
+        <div class="notebooks"> 
+
+            <h1 class="classname">English</h1>
+            <div class="picture"> <img src="unicorn.jpg" class="picture""> </div>
+
+            <p class="section">9-Pink Quartz 2025-2026</p>
+            <p class="teacher">Ms. Jade</p>
+            
+            <div class="class container-fluid"></div>
+
+        </div>
+
+
+
+        </div>
+
+        <footer class="footer-full-width py-2 bg-secondary text-white text-end px-4">
+        <small>Kate Velo | Group No. 3 | 9 Ruby © 2026</small>
+    </footer>
+
+
+
+
+    
