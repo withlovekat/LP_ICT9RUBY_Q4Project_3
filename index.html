@@ -72,13 +72,12 @@
 
             <ul class="nav flex-column mt-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="dashboard.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Dashboard </a>
-                             <a class="nav-link" href="notebooks.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Virtual Notebooks </a>
-                            <a class="nav-link" href="#" style="color: 	#ffdbdc; font-family: Phaeton;" > Tasks </a> 
-                            <a class="nav-link" href="profile.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Profile </a>   
-                            <a class="nav-link" href="credits.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Credits </a> 
-                            <a class="nav-link" href="index.html" style="color: 	#ffdbdc; font-family: Phaeton;" > Logout </a> 
-                        </li>  
+                             <a class="nav-link" href="dashboard.html" style="color: rgb(255, 219, 220); font-family: Phaeton;">Dashboard</a>
+                    <a class="nav-link" href="notebooks.html" style="color: #ffdbdc; font-family: Phaeton;">Virtual Notebooks</a>
+                    <a class="nav-link active" href="tasks.html" style="color: #ffffff; font-family: Phaeton;">Tasks</a>
+                    <a class="nav-link" href="profile.html" style="color: #ffdbdc; font-family: Phaeton;">Profile</a>
+                    <a class="nav-link" href="credits.html" style="color: #ffdbdc; font-family: Phaeton;">Credits</a>
+                    <a class="nav-link" href="index.html" style="color: #ffdbdc; font-family: Phaeton;">Logout</a>
                     </nav>
 
     <style>
@@ -170,7 +169,7 @@ h2 {
         <label><input type="checkbox" id="remember"> Stay logged in</label>
     </div>
 
-    <button class="#" onclick="login()">Login</button>
+    <button class="login-btn" onclick="login()">Login</button>
     <a href="#" class="forgot" onclick="forgot()">Forgot username / password?</a>
 
     <div id="msg" class="message"></div>
@@ -212,8 +211,7 @@ function login() {
         }
 
         setTimeout(() => {
-          window.location.href = "dashboard.html";
-          alert("Logged in!");
+            alert("Logged in!");
         }, 800);
 
     } else {
