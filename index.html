@@ -169,7 +169,7 @@ h2 {
         <label><input type="checkbox" id="remember"> Stay logged in</label>
     </div>
 
-    <button class="dashboard.html" onclick="login()">Login</button>
+    <button class="#" onclick="login()">Login</button>
     <a href="#" class="forgot" onclick="forgot()">Forgot username / password?</a>
 
     <div id="msg" class="message"></div>
@@ -211,7 +211,8 @@ function login() {
         }
 
         setTimeout(() => {
-            alert("Logged in!");
+          window.location.href = "dashboard.html";
+          alert("Logged in!");
         }, 800);
 
     } else {
